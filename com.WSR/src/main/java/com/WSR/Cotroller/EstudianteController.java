@@ -55,11 +55,11 @@ public class EstudianteController {
 			estudianteRepo.save(estudiante);
 			response.put("message", "Estudiante creado correctamente");
 			response.put("status", 200);
-			response.put("marca", estudiante);
+			response.put("estudiante", estudiante);
 		} catch (Exception ex) {
 			response.put("message", ex.getMessage());
 			response.put("status", 500);
-			response.put("marca", null);
+			response.put("estudiante", null);
 		}
 
 		return response;
@@ -80,16 +80,16 @@ public class EstudianteController {
 
 				response.put("message", "Estudiante encontrado");
 				response.put("status", 200);
-				response.put("marca", estudiante);
+				response.put("estudiante", estudiante);
 			} else {
 				response.put("message", "Estudiante no encontrado");
 				response.put("status", 404);
-				response.put("marca", null);
+				response.put("estudiante", null);
 			}
 		} catch (Exception ex) {
 			response.put("message", ex.getMessage());
 			response.put("status", 500);
-			response.put("marca", null);
+			response.put("estudiante", null);
 		}
 
 		return response;
@@ -111,16 +111,16 @@ public class EstudianteController {
 
 				response.put("message", "Estudiantes encontrados: "+  listaEstudiantes.size());
 				response.put("status", 200);
-				response.put("marca", listaEstudiantes);
+				response.put("estudiante", listaEstudiantes);
 			} else {
 				response.put("message", "No hay estudiantes registrados");
 				response.put("status", 404);
-				response.put("marca", null);
+				response.put("estudiante", null);
 			}
 		} catch (Exception ex) {
 			response.put("message", ex.getMessage());
 			response.put("status", 500);
-			response.put("marca", null);
+			response.put("estudiante", null);
 		}
 
 		return response;
@@ -149,19 +149,19 @@ public class EstudianteController {
         		
         		response.put("message", "Estudiante actualizado");
         		response.put("status",200);
-				response.put("marca", estudianteRepo.save(estudiante));
+				response.put("estudiante", estudianteRepo.save(estudiante));
 				
         	}else 
 			{
         		response.put("message", "Estudiante no encontrado");
 				response.put("status", 404);
-				response.put("marca", null);
+				response.put("estudiante", null);
 			}
 			
 		} catch (Exception ex) {
 			 response.put("message", ex.getMessage());
              response.put("status", 500);
-             response.put("marca", null);
+             response.put("estudiante", null);
          }
 
        return response;
@@ -182,12 +182,12 @@ public class EstudianteController {
 			estudianteRepo.delete(idEstudiante);
             response.put("message", "Estudiante eliminado correctamente");
             response.put("status", 200);
-            response.put("promo", idEstudiante);
+            response.put("estudiante", idEstudiante);
         }
         catch (Exception ex){
             response.put("message", ex.getMessage());
             response.put("status", 500);
-            response.put("promo", idEstudiante);
+            response.put("estudiante", idEstudiante);
         }
 
       return response;

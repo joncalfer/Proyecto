@@ -52,11 +52,11 @@ public class ProfesorController {
 			profeRepo.save(profesor);
 			response.put("message", "Profesor creado correctamente");
 			response.put("status", 200);
-			response.put("marca", profesor);
+			response.put("profesor", profesor);
 		} catch (Exception ex) {
 			response.put("message", ex.getMessage());
 			response.put("status", 500);
-			response.put("marca", null);
+			response.put("profesor", null);
 		}
 
 		return response;
@@ -77,16 +77,16 @@ public class ProfesorController {
 
 				response.put("message", "Profesor encontrado");
 				response.put("status", 200);
-				response.put("marca", profesor);
+				response.put("profesor", profesor);
 			} else {
 				response.put("message", "Profesor no encontrado");
 				response.put("status", 404);
-				response.put("marca", null);
+				response.put("profesor", null);
 			}
 		} catch (Exception ex) {
 			response.put("message", ex.getMessage());
 			response.put("status", 500);
-			response.put("marca", null);
+			response.put("profesor", null);
 		}
 
 		return response;
@@ -108,16 +108,16 @@ public class ProfesorController {
 
 				response.put("message", "Profesores encontrados: "+  listaProfesores.size());
 				response.put("status", 200);
-				response.put("marca", listaProfesores);
+				response.put("profesor", listaProfesores);
 			} else {
 				response.put("message", "No hay profesores registrados");
 				response.put("status", 404);
-				response.put("marca", null);
+				response.put("profesor", null);
 			}
 		} catch (Exception ex) {
 			response.put("message", ex.getMessage());
 			response.put("status", 500);
-			response.put("marca", null);
+			response.put("profesor", null);
 		}
 
 		return response;
@@ -146,25 +146,22 @@ public class ProfesorController {
         		
         		response.put("message", "Profesor actualizado");
         		response.put("status",200);
-				response.put("marca", profeRepo.save(profesor));
+				response.put("profesor", profeRepo.save(profesor));
 				
         	}else 
 			{
         		response.put("message", "Profesor no encontrado");
 				response.put("status", 404);
-				response.put("marca", null);
+				response.put("profesor", null);
 			}
 			
 		} catch (Exception ex) {
 			 response.put("message", ex.getMessage());
              response.put("status", 500);
-             response.put("marca", null);
+             response.put("profesor", null);
          }
 
        return response;
-         
-         
-         
          
 	}
 
@@ -179,12 +176,12 @@ public class ProfesorController {
 			profeRepo.delete(idProfesor);
             response.put("message", "Profesor eliminado correctamente");
             response.put("status", 200);
-            response.put("promo", idProfesor);
+            response.put("profesor", idProfesor);
         }
         catch (Exception ex){
             response.put("message", ex.getMessage());
             response.put("status", 500);
-            response.put("promo", idProfesor);
+            response.put("profesor", idProfesor);
         }
 
       return response;
