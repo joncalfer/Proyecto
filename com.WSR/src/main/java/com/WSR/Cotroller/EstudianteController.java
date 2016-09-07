@@ -42,6 +42,8 @@ public class EstudianteController {
 
 		try {
 			Estudiante estudiante = new Estudiante();
+			
+			
 			estudiante.setId(0);
 			estudiante.setNombre(estudianteMap.get("nombre").toString());
 			estudiante.setApellidos((estudianteMap.get("apellidos").toString()));
