@@ -17,6 +17,7 @@ public class Estudiante {
 	private String correo;
 	private Date fechaNacimiento;
 	private Boolean activo;
+	
 
 	public Estudiante() {
 	}
