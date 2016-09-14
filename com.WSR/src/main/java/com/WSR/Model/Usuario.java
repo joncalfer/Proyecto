@@ -14,13 +14,15 @@ public class Usuario {
 	
 	private String nombreUsuario;
 	private String contrasena;
+	private String Authorities;
 	
 	
-	public Usuario(Integer id, String nombreUsuario, String contrasena) {
+	public Usuario(Integer id, String nombreUsuario, String contrasena, String Authorities) {
 		super();
 		this.id = id;
 		this.nombreUsuario = nombreUsuario;
 		this.contrasena = contrasena;
+		this.Authorities = Authorities;
 	}
 
 
@@ -51,6 +53,16 @@ public class Usuario {
 
 	public void setContrasena(String contrasena) {
 		this.contrasena = contrasena;
+	}
+
+
+	public String getAuthorities() {
+		return Authorities;
+	}
+
+
+	public void setAuthorities(String authorities) {
+		Authorities = authorities;
 	}
 	
 	
