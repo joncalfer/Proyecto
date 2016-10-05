@@ -1,0 +1,13 @@
+C:\Users\Centauro Developer\Desktop\Entity\BL\bin\Debug\BL.dll
+C:\Users\Centauro Developer\Desktop\Entity\BL\bin\Debug\BL.pdb
+C:\Users\Centauro Developer\Desktop\Entity\BL\bin\Debug\DAO.dll
+C:\Users\Centauro Developer\Desktop\Entity\BL\bin\Debug\Entity.dll
+C:\Users\Centauro Developer\Desktop\Entity\BL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Centauro Developer\Desktop\Entity\BL\bin\Debug\EntityFramework.dll
+C:\Users\Centauro Developer\Desktop\Entity\BL\bin\Debug\DAO.pdb
+C:\Users\Centauro Developer\Desktop\Entity\BL\bin\Debug\Entity.pdb
+C:\Users\Centauro Developer\Desktop\Entity\BL\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Centauro Developer\Desktop\Entity\BL\bin\Debug\EntityFramework.xml
+C:\Users\Centauro Developer\Desktop\Entity\BL\obj\Debug\BL.csprojResolveAssemblyReference.cache
+C:\Users\Centauro Developer\Desktop\Entity\BL\obj\Debug\BL.dll
+C:\Users\Centauro Developer\Desktop\Entity\BL\obj\Debug\BL.pdb
